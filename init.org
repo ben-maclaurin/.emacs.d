@@ -143,9 +143,9 @@ Set the default font size and face.
     :hook
     (text-mode . mixed-pitch-mode))
 
-    (set-face-attribute 'default nil :font "JetBrains Mono-17")
-    (set-face-attribute 'fixed-pitch nil :font "JetBrains Mono-17")
-    (set-face-attribute 'variable-pitch nil :font "JetBrains Mono-17")
+    (set-face-attribute 'default nil :font "Essential PragmataPro-17")
+    (set-face-attribute 'fixed-pitch nil :font "Essential PragmataPro-17")
+    (set-face-attribute 'variable-pitch nil :font "Essential PragmataPro-17")
   ;;  (add-hook 'org-mode-hook 'variable-pitch-mode)
 #+end_src
 
@@ -332,7 +332,7 @@ A beautiful and accessible collection of themes by Prot Stavrou.
 #+end_src
 
 *** ox-hugo
-~ox-hugo~ provides org export support for Hugo-compatible markdown (it
+~oxhugo~ provides org export support for Hugo-compatible markdown (it
 powers this blog).
 
 #+begin_src lisp :tangle ~/.emacs.d/init.el
@@ -355,7 +355,7 @@ for ease-of-access:
 
   (use-package magit
       :config
-    (global-set-key (kbd "C-x m") (lambda () (interactive) (split-window-right) (other-window-prefix) (magit-status))))
+    (global-set-key (kbd "C-x m") (lambda () (interactive) (split-window-right) (other-window-prefix) (magit-status) (setq unread-command-events (listify-key-sequence "$")))))
 #+end_src
 
 *** avy
