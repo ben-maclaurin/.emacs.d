@@ -100,7 +100,7 @@
   :config
   (setq company-idle-delay nil)
   (global-company-mode))
-g
+
 (defun ben-save-and-switch-to-web-mode ()
   (let ((original-mode major-mode))
     (web-mode)
