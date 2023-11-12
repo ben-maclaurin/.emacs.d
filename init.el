@@ -32,8 +32,8 @@
 (setq mac-command-modifier 'meta)
 (setq next-line-add-newlines t)
 
-(global-set-key (kbd "M-n") (lambda () (interactive) (next-line 8)))
-(global-set-key (kbd "M-p") (lambda () (interactive) (previous-line 8)))
+(global-set-key (kbd "M-n") (lambda () (interactive) (next-line 3)))
+(global-set-key (kbd "M-p") (lambda () (interactive) (previous-line 3)))
 
 (setq initial-scratch-message nil)
 
