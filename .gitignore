@@ -1,0 +1,8 @@
+.cache/
+ac-comphist.dat
+auto-save-list/
+custom.el
+elpa/
+eshell/
+projectile-bookmarks.eld
+transient/
